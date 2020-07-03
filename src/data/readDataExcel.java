@@ -6,13 +6,10 @@ import java.io.FileInputStream;
 
 import java.io.IOException;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import org.apache.poi.ss.usermodel.Row;
 
-import org.apache.poi.ss.usermodel.Sheet;
 
-import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -39,11 +36,13 @@ public class readDataExcel {
 	        		&& row.getCell(1).getNumericCellValue() == deleted
 	        		&& row.getCell(2).getNumericCellValue() == correct)
 	        {
-	        	
+	        	workbook.close();
+	        	file.close();
 	        	return row;
 	        }
 	        	
 	        }
+	    workbook.close();
 	    file.close();
 	    return row;
 	    }  

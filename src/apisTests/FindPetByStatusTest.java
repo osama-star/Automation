@@ -1,17 +1,9 @@
 package apisTests;
 
 
-import java.awt.TextArea;
-import java.util.Random;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
-import apis.addNewPetToStoreRequest;
 import io.restassured.RestAssured;
-import io.restassured.http.Method;
+
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 

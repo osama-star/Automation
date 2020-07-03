@@ -20,10 +20,9 @@ public class FindPetByIDTest {
 		 request.header("Content-Type", "application/json");
 		  
 		  
-		 // Post the request and check the response
+		 // Post the request 
 		 Response response = request.get(ID);
-		 
-		 
+
 		 return response;
 	}
 }
